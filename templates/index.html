@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        />
+    </head>
+    <body data-theme="dark">
+        <section class="hero is-large">
+            <div class="hero-head">
+                <nav class="navbar is-dark">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <img
+                                    src="https://bulma.io/assets/images/bulma-type-white.png"
+                                    alt="Logo"
+                                />
+                            </a>
+                            <span
+                                class="navbar-burger"
+                                data-target="navbarMenuHeroB"
+                            >
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <a href="/" class="navbar-item is-active">
+                                    Home
+                                </a>
+                                <a href="/api/data" class="navbar-item">
+                                    Api data
+                                </a>
+                                <a
+                                    href="https://github.com/yourusername/flask-api-rest"
+                                    class="navbar-item"
+                                >
+                                    Repo
+                                </a>
+                                <span class="navbar-item">
+                                    <a
+                                        href="https://github.com/Kenkyoo"
+                                        class="button is-info is-inverted"
+                                    >
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Github</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title">Flask api rest</p>
+                    <p class="subtitle">API RESTful built with Flask</p>
+                    <article class="message is-dark">
+                        <div class="message-header">
+                            <p>Dark</p>
+                            <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body my-4 p-4">
+                            This example shows how to use Flask on Vercel with
+                            Serverless Functions using the Python Runtime.
+                            <strong>Flask</strong>,This example uses the Web
+                            Server Gateway Interface (WSGI) with Flask to handle
+                            requests on Vercel with Serverless Functions.
+                            <div class="card my-5">
+                                <div class="card-content">
+                                    <figure class="highlight">
+                                        <pre><code class="language-javascript">
+                                    fetch('https://api.example.com/data')
+                                      .then(response => {
+                                        if (!response.ok) {
+                                          throw new Error(`HTTP error! status: ${response.status}`)
+                                        }
+                                        return response.json()
+                                      })
+                                      .then(data => {
+                                        console.log(data)
+                                      })
+                                      .catch(error => {
+                                        console.error('Fetch error:', error.message)
+                                      })
+                                    </code></pre>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <a href="/api/data" class="button">View data</a>
+                </div>
+            </div>
+
+            <div class="hero-foot">
+                <footer class="footer">
+                    <div class="content has-text-centered">
+                        <p>
+                            <strong>Bulma</strong> by
+                            <a href="https://jgthms.com">Jeremy Thomas</a>. The
+                            source code is licensed
+                            <a href="https://opensource.org/license/mit">MIT</a
+                            >. The website content is licensed
+                            <a
+                                href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+                                >CC BY NC SA 4.0</a
+                            >.
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </body>
+</html>

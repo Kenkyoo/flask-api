@@ -1,0 +1,35 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Aprender Flask",
+      "body": "Repasar rutas, blueprints y jsonify",
+      "author": "Franco",
+      "created_at": "2024-01-10",
+      "updated_at": "2024-01-10",
+      "tags": ["python", "flask", "backend"],
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Proyecto Portfolio",
+      "body": "Crear una API simple para mostrar en GitHub",
+      "author": "Franco",
+      "created_at": "2024-01-12",
+      "updated_at": "2024-01-13",
+      "tags": ["portfolio", "api"],
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Deploy",
+      "body": "Subir la app a Render o Railway",
+      "author": "Franco",
+      "created_at": "2024-01-15",
+      "updated_at": "2024-01-15",
+      "tags": ["deploy"],
+      "completed": false
+    }
+  ],
+  "total": 3
+}
