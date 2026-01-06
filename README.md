@@ -1,31 +1,108 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fflask&demo-title=Flask%20API&demo-description=Use%20Flask%20API%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fvercel-plus-flask.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+# Flask API
 
-# Flask + Vercel
+Simple REST API built with **Flask** and deployed on **Vercel** using Serverless Functions.
 
-This example shows how to use Flask on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+## 🚀 Live Demo
 
-## Demo
+[https://flask-api-nu-seven.vercel.app/](https://flask-api-nu-seven.vercel.app/)
 
-https://vercel-plus-flask.vercel.app/
+## 📦 Repository
 
-## How it Works
+[https://github.com/Kenkyoo/flask-api](https://github.com/Kenkyoo/flask-api)
 
-This example uses the Web Server Gateway Interface (WSGI) with Flask to handle requests on Vercel with Serverless Functions.
+## ✨ Features
 
-## Running Locally
+* Flask-based REST API
+* JSON responses
+* Serverless deployment on Vercel
+* Simple project structure
+* Ideal for frontend consumption (React / Vue)
 
-```bash
-npm i -g vercel
-python -m venv .venv
-source .venv/bin/activate
-uv sync  # or alternatively pip install flask gunicorn
-gunicorn main:app
+## 📁 Project Structure
+
+```
+.
+├── app.py
+├── requirements.txt
+├── vercel.json
+└── data.json
 ```
 
-Your Flask application is now available at `http://localhost:3000`.
+## 🔌 API Endpoints
 
-## One-Click Deploy
+### Get sample data
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+```
+GET /api/data
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fflask&demo-title=Flask%20API&demo-description=Use%20Flask%20API%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fvercel-plus-flask.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+**Response (example):**
+
+```json
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Aprender Flask",
+      "body": "Repasar rutas y jsonify",
+      "completed": false
+    }
+  ]
+}
+```
+
+## 🛠️ Tech Stack
+
+* Python
+* Flask
+* Vercel Serverless Functions
+
+## 📄 Requirements
+
+```
+Flask==3.1.2
+gunicorn==23.0.0
+```
+
+> ⚠️ **Note:** `gunicorn` is not required for Vercel, but is included for compatibility with other platforms.
+
+## ▶️ Run Locally
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+API available at:
+
+```
+http://localhost:5000/api/data
+```
+
+## ☁️ Deploy on Vercel
+
+1. Fork or clone the repository
+2. Go to [https://vercel.com](https://vercel.com)
+3. Import the repository
+4. Deploy
+
+The API will be available at:
+
+```
+https://your-project.vercel.app/api/data
+```
+
+## 🧪 Use Case
+
+This project is intended for:
+
+* Learning Flask
+* Mock APIs
+* Portfolio projects
+* Frontend testing
+
+---
+
+Made with Flask 🐍
