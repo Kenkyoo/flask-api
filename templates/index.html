@@ -7,6 +7,21 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
         />
+        <style>
+            pre {
+                background: #0f172a;
+                color: #e5e7eb;
+                padding: 1rem;
+                overflow-x: auto;
+                border-radius: 6px;
+                font-size: 0.9rem;
+            }
+
+            pre code {
+                white-space: pre;
+                font-family: monospace;
+            }
+        </style>
     </head>
     <body data-theme="dark">
         <section class="hero is-large">
@@ -14,12 +29,7 @@
                 <nav class="navbar is-dark">
                     <div class="container">
                         <div class="navbar-brand">
-                            <a class="navbar-item">
-                                <img
-                                    src="https://bulma.io/assets/images/bulma-type-white.png"
-                                    alt="Logo"
-                                />
-                            </a>
+                            <a class="navbar-item"> Flask API </a>
                             <span
                                 class="navbar-burger"
                                 data-target="navbarMenuHeroB"
@@ -39,7 +49,7 @@
                                     Api data
                                 </a>
                                 <a
-                                    href="https://github.com/yourusername/flask-api-rest"
+                                    href="https://github.com/Kenkyoo/flask-api"
                                     class="navbar-item"
                                 >
                                     Repo
@@ -79,7 +89,9 @@
                             <div class="card my-5">
                                 <div class="card-content">
                                     <figure class="highlight">
-                                        <pre><code class="language-javascript">
+                                        <pre
+                                            class="has-text-centered"
+                                        ><code class="language-javascript has-text-centered">
                                     fetch('https://api.example.com/data')
                                       .then(response => {
                                         if (!response.ok) {
@@ -107,8 +119,8 @@
                 <footer class="footer">
                     <div class="content has-text-centered">
                         <p>
-                            <strong>Bulma</strong> by
-                            <a href="https://jgthms.com">Jeremy Thomas</a>. The
+                            <strong>Flask-api</strong> by
+                            <a href="https://github.com/kenkyo">Kenkyo</a>. The
                             source code is licensed
                             <a href="https://opensource.org/license/mit">MIT</a
                             >. The website content is licensed
